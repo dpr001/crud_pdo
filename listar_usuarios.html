@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página para realizar login">
+    <meta name="author" content="Pedro Figueiredo">
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <title>Sistema</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+  </head>
+<!-- Inicio navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">Sistema</a>
+	</div>
+	<div id="navbar">
+	  <ul class="nav navbar-nav">            
+		<li>
+		  <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuários<span class="caret"></span></a>
+		</li>
+		<li>
+		  <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alunos<span class="caret"></span></a>
+		</li>
+		<li><a href="sair.php">Sair</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+  </div>
+</nav>
+<!-- Fim navbar -->  
+<div class="container theme-showcase" role="main">
+    <div class="page-header">
+        <h1>Listar de Produto</h1>
+    </div>
+<div class="row espaco"> 
+    <div class="pull-right">
+      	<a href='#'><button type='button' class='btn btn-sm btn-success'>Cadastrar</button></a>
+    </div>
+</div>
+  	<div class="row">
+       <div class="col-md-12">
+	        <table class="table">
+	            <thead>
+		            <tr>
+			            <th>ID</th>
+			            <th>Nome</th>
+			            <th>E-mail</th>
+			            <th>Senha</th>
+				    <th>Perfil</th>
+			            <th>Ações</th>
+		            </tr>
+	            </thead>
+				<tbody>
+					<tr>
+								<td>
+								<a href='#'><button type='button' class='btn btn-sm btn-primary'>Visualizar
+								</button></a>
+
+								<a href='#'><button type='button' class='btn btn-sm btn btn-warning'>Editar</button></a>
+
+								<a href='#'><button type='button' class='btn btn-sm btn-danger'>Apagar</button></a>
+
+							</tr>
+		
+        		</tbody>
+	        </table>
+        </div>
+  	</div>
+</div> 
+

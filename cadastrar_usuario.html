@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página para realizar login">
+    <meta name="author" content="Pedro Figueiredo">
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <title>Sistema</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+  </head>
+<!-- Inicio navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">Sistema</a>
+	</div>
+	<div id="navbar">
+	  <ul class="nav navbar-nav">            
+		<li>
+		  <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Usuários<span class="caret"></span></a>
+		</li>
+		<li>
+		  <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Alunos<span class="caret"></span></a>
+		</li>
+		<li><a href="sair.php">Sair</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+  </div>
+</nav>
+<!-- Fim navbar -->  
+<div class="container theme-showcase" role="main">
+  <div class="page-header">
+      <h1>Cadastrar Usuário</h1>
+  </div>
+  <div class="pull-right">
+      <a href="administrativo.php?pag=10"><button type="button" class="btn btn-sm btn-info">Listar</button></a>      
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <form class="form-horizontal" method="POST" action="processa/proc_cad_produto.php" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="inputnmproduto" class="col-sm-3 control-label">Nome do Usuário</label>
+          <div class="col-sm-6">
+            <input type="text" name="nome" class="form-control" placeholder="Nome do Usuário" required="true">
+          </div>
+        </div>
+	<div class="form-group">
+          <label for="inputnmproduto" class="col-sm-3 control-label">E-mail</label>
+          <div class="col-sm-6">
+            <input type="email" name="email" class="form-control" placeholder="E-mail do Usuário" required="true">
+          </div>
+        </div>
+	<div class="form-group">
+          <label for="inputnmproduto" class="col-sm-3 control-label">Senha</label>
+          <div class="col-sm-6">
+            <input type="password" name="senha" class="form-control" placeholder="Senha do Usuário" required="true">
+          </div>
+        </div>
+	<div class="form-group">
+          <label for="inputnmproduto" class="col-sm-3 control-label">Perfil</label>
+          <div class="col-sm-6">
+            <input type="password" name="senha" class="form-control" placeholder="Perfil do Usuário" required="true">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-3 col-sm-10">
+            <button type="submit" class="btn btn-success">Salvar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+<!-- /container -->
